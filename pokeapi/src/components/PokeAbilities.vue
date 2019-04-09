@@ -1,6 +1,6 @@
 <template>
   <div class="poke-abilities">
-    <h2>Abilities : {{pokemon.name}}</h2>
+    <h2>Abilities of {{pokemon.name}}</h2>
     <ul class="list-group">
       <li
         class="list-group-item"
