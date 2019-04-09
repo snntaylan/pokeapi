@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1 id="title">Pokemon Finder-API</h1>
+    <PokeApi/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokeApi from "./components/PokeApi.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    PokeApi
   }
-}
+};
 </script>
 
 <style>
+h1 {
+  color: white;
+}
+#title {
+  color: cornflowerblue;
+}
+
+body {
+  margin: 20px;
+  padding: 20p;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../public/pokeapi-bg.jpg);
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro, Arial, sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #325e8a;
+  margin-top: 100px;
 }
 </style>
